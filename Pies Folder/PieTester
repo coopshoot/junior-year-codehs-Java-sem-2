@@ -1,0 +1,22 @@
+import java.util.ArrayList;
+
+public class PieTester
+{
+    public static void main(String[] args)
+    {
+        // Start here!
+        Pie apple = new ApplePie(8);
+        Pie pecan = new PecanPie(8, "maple");
+        Pie keyLime = new Pie("Key Lime", 8);
+        
+        
+        ArrayList<Pie> pies = new ArrayList<Pie>();
+        pies.add(apple);
+        pies.add(pecan);
+        pies.add(keyLime);
+        
+        System.out.println(pies.get(0).getSlices() + " slice " + pies.get(0).getType() + " pie");
+        System.out.println(pies.get(1).getSlices() + " slice " + pies.get(1).getType() + " pie");
+        System.out.println(pies.get(2).getSlices() + " slice " + pies.get(2).getType() + " pie");
+    }
+}
